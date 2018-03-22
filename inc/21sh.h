@@ -21,46 +21,6 @@
 # include <sys/stat.h>
 # include <limits.h>
 
-/*
-** twenty_one_sh.c
-*/
-int		main(int ac, char **argv, char **env);
 
-/*
-** cd.c
-*/
-void	ft_cooldown(char **av, int ac, char **env);
-char	*check_if_goin_to_parent_dir(char *p);
-
-/*
-** echo.c
-*/
-void	ft_echo(char **s, int ac, char **env);
-
-/*
-** env.c
-*/
-void	ft_env(int ac, char **env);
-void	ft_setenv(char **av, int ac, char **env);
-void	ft_unsetenv(char **av, int ac, char **env);
-
-/*
-** exe.c
-*/
-void	ft_exe(char **av, char **env);
-
-/*
-** ft_split_input.c
-*/
-char	**ft_split_input(char *s);
-
-/*
-** utils.c
-*/
-int		get_env(char *s, char **env);
-void	ft_pwd(char **env);
-void	update_pwd(char **env, char *np);
-char	**create_env(char **env);
-char	*ft_getcwd(void);
 
 #endif
